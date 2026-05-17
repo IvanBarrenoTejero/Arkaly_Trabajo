@@ -1,0 +1,18 @@
+[project]
+name = "yfinance-fastapi-service"
+version = "0.1.0"
+description = "FastAPI wrapper for yfinance for Java clients"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "yfinance>=0.2.54",
+  "pandas>=2.2.0",
+  "pydantic-settings>=2.6.0",
+  "colorlog>=6.10.1",
+  "requests>=2.31.0"
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arkaly.desktop.controllers.DashboardController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: #2d3748;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10 0 20 0;" text="Arkaly" />
+            <Button mnemonicParsing="false" onAction="#mostrarInicio" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-alignment: CENTER-LEFT; -fx-padding: 10;" text="Inicio" />
+            <Button mnemonicParsing="false" onAction="#mostrarInversiones" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-alignment: CENTER-LEFT; -fx-padding: 10;" text="Inversiones" />
+            <Button mnemonicParsing="false" onAction="#mostrarInformes" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-alignment: CENTER-LEFT; -fx-padding: 10;" text="Finanzas personales" />
+            <Button mnemonicParsing="false" onAction="#mostrarGestorCarpetas" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-alignment: CENTER-LEFT; -fx-padding: 10;" text="Gestor Documental" />
+            <Button mnemonicParsing="false" onAction="#mostrarPerfil" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-alignment: CENTER-LEFT; -fx-padding: 10;" text="Perfil" />
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="contenidoPanel" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #f7fafc;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

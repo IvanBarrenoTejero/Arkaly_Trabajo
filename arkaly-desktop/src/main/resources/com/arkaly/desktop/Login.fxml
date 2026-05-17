@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arkaly.desktop.controllers.LoginController">
+    <children>
+        <AnchorPane maxHeight="450.0" maxWidth="400.0" minHeight="450.0" minWidth="400.0" prefHeight="450.0" prefWidth="400.0">
+            <children>
+                <VBox layoutX="84.0" layoutY="96.0" prefHeight="258.0" prefWidth="232.0" spacing="20.0">
+                    <children>
+                        <VBox prefHeight="11.0" prefWidth="232.0">
+                            <children>
+                                <Label text="Bienvenido">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Introduzca sus datos" textFill="#a1a0a0">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <TextField fx:id="emailField" promptText="Email" />
+                        <VBox prefHeight="42.0" prefWidth="232.0" spacing="8.0">
+                            <children>
+                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                    <children>
+                                        <PasswordField fx:id="passwordField" promptText="Contraseña" />
+                                        <TextField fx:id="passwordVisible" />
+                                    </children>
+                                </StackPane>
+                                <CheckBox fx:id="checkPassword" mnemonicParsing="false" onAction="#pulsarCheckContrasenia" text="Mostrar Contraseña" />
+                            </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" onAction="#pulsarIniciarSesion" prefHeight="36.0" prefWidth="231.0" text="Iniciar sesión" />
+                        <Label alignment="CENTER" onMouseClicked="#pulsarCrearCuenta" prefHeight="17.0" prefWidth="233.0" style="-fx-text-fill: 0099FF;" text="Crear una cuenta" textFill="#0099ff" />
+                        <Label fx:id="errorLabel" alignment="CENTER" prefHeight="18.0" prefWidth="235.0" textFill="RED" />
+                    </children>
+                </VBox>
+                <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="100.0" text="Arkaly">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

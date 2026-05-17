@@ -1,0 +1,19 @@
+info:
+  name: Download
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:8000/api/v1/download?tickers=MSFT
+  params:
+    - name: tickers
+      value: MSFT
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.arkaly.desktop.controllers.InformesController"
+            minHeight="575.0" minWidth="800.0">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10"
+              style="-fx-background-color: #ffffff; -fx-border-color: #e2e8f0; -fx-border-width: 0 0 1 0;">
+            <padding><Insets top="15" bottom="15" left="15" right="15"/></padding>
+            <Label text="Informes">
+                <font><Font name="System Bold" size="28"/></font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Gráficos"      onAction="#mostrarGraficos"      styleClass="btn-nav"/>
+            <Button text="Transacciones" onAction="#mostrarTransacciones"  styleClass="btn-nav"/>
+        </HBox>
+    </top>
+    <center>
+        <StackPane fx:id="contenidoInformes"
+                   style="-fx-background-color: #f7fafc;"/>
+    </center>
+</BorderPane>
